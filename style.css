@@ -1,8 +1,27 @@
 body {
-	background-color: #EDE7F6
+	background-color: #EDE7F6;
 }
 
+.jumbotron {
+	background-color: #673AB7;
+	text-align: center;
+	color: white;
+	border-color: black;
+	border-style: solid;
+}
+.navbar {
+	padding-top: 0px;
+	font-size: 20px;
+	
+}
 
+.container-fluid {
+	padding-top: 0px;
+}
+.sides{
+	padding-right: 200px;
+	padding-left: 200px;
+}
 /* Profile sidebar */
 
 .sidebar {
