@@ -14,17 +14,23 @@ import {SidebarComponent} from './sidebar.component.ts';
 	</div>
 	<div class="container-fluid">
 		<div class="row sides">
-			<nav-component></nav-component>
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<nav-component></nav-component>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-md-9">
 			</div>
 			<div class="col-md-2">
 				<div class="row">
-					<div class="col-md-11">
+					<div class="col-md-12">
 						<sidebar-component></sidebar-component>
 					</div>
 				</div>
+			</div>
+			<div class="col-md-1">
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,3 @@
-import {Component} from "angular2/core";
-
-@Component({
-   	selector: 'sidebar-component'
-	template: `
 <div class="sidebar">
 	<div class="row">
 		<div class=col-md-3></div>
@@ -20,7 +15,7 @@ import {Component} from "angular2/core";
 		</div>
 	</div>
 	<div class="sidebar-buttons">
-		<button type="button" class="btn btn-primary btn-sm">Share</button>
+		<button type="button" class="btn btn-primary btn-sm">Follow</button>
 		<button type="button" class="btn btn-success btn-sm">Contact</button>
 	</div>
 </div>
@@ -54,14 +49,18 @@ import {Component} from "angular2/core";
 </div>
 <div class="sidebar">
 	<div class="sidebar-title">
+		<div class="sidebar-title-text">
+			Language
+		</div>
 		<div class="sidebar-title-body">
-
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default">English-US</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default">Vietmanese</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-`
-})
-
-export class SidebarComponent {
-
-}
