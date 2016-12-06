@@ -1,7 +1,7 @@
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
 
 @Component({
-   selector: 'nav-component'
+   selector: 'nav-component',
    template: `
 			<nav class="navbar navbar-default navbar-static-top">
 				<div class="container-fluid">
@@ -32,7 +32,7 @@ import {Component} from "angular2/core";
 									<li><a href="#">One more separated link</a></li>
 								</ul>
 							</li>
-							<li><a href="">About</a></li>
+							<li><a href="">About Me</a></li>
 						</ul>
 					</div>
 				</div>

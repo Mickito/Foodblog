@@ -1,7 +1,7 @@
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
 
 @Component({
-   	selector: 'sidebar-component'
+   	selector: 'sidebar-component',
 	template: `
 <div class="sidebar">
 	<div class="row">
@@ -16,7 +16,7 @@ import {Component} from "angular2/core";
 			Haley Nguyen
 		</div>
 		<div class="sidebar-title-body">
-			I am currently a student studying a bachelor in accounting and majoring in finance, who loves cooking in her spare time.
+			I am currently a student studying a bachelor in bussiness majoring in accounting and finance, who loves cooking in her spare time.
 		</div>
 	</div>
 	<div class="sidebar-buttons">

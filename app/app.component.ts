@@ -1,27 +1,28 @@
-import {Component} from 'angular2/core';
-import {NavigationComponent} from './navigation.component.ts';
-import {SidebarComponent} from './sidebar.component.ts';
+import { Component } from '@angular/core';
+import { NavigationComponent } from './navigation.component';
+import { SidebarComponent } from './sidebar.component';
 
 @Component({
-   selector: 'main-page'
+  selector: 'main-page',
   template: `
   <div class="row">
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Haley Nguyen's Kitchen</h1>
-			</div>
-		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="row sides">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">
+	<div class="container-fluid background">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron">
+					<div class="container">
+				<h1>Haley Nguyen's Kitchen</h1>
+					</div>
+				</div>
 				<nav-component></nav-component>
 			</div>
-			<div class="col-md-1"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-10">
+				<div class="row">
+				
+				</div>
 			</div>
 			<div class="col-md-2">
 				<div class="row">
@@ -30,12 +31,9 @@ import {SidebarComponent} from './sidebar.component.ts';
 					</div>
 				</div>
 			</div>
-			<div class="col-md-1">
-			</div>
 		</div>
 	</div>
-  `,
-  directives: [NavigationComponent,SidebarComponent]
+  `
 })
 
 export class AppComponent {

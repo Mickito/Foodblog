@@ -1,66 +1,57 @@
-<div class="sidebar">
-	<div class="row">
-		<div class=col-md-3></div>
-		<div class="col-md-5">
-			<img src="Images/rsz_profile.jpg" alt="...">
-		</div>
-		<div class=col-md-4></div>
+import { Component } from '@angular/core';
+import { NavigationComponent } from './navigation.component.ts';
+import { SidebarComponent } from './sidebar.component.ts';
+
+@Component({
+   selector: 'main-page'
+  template: `
+  <div class="row">
 	</div>
-	<div class="sidebar-title">
-		<div class="sidebar-title-text">
-			Haley Nguyen
-		</div>
-		<div class="sidebar-title-body">
-			I am currently a student studying a bachelor in accounting and majoring in finance, who loves cooking in her spare time.
-		</div>
-	</div>
-	<div class="sidebar-buttons">
-		<button type="button" class="btn btn-primary btn-sm">Follow</button>
-		<button type="button" class="btn btn-success btn-sm">Contact</button>
-	</div>
-</div>
-<div class="sidebar">
-	<div class="sidebar-icons">
-		<p><img src="Images/Icons/facebook.png" /><img src="Images/Icons/twitter.png" /><img src="Images/Icons/linkedin.png" /><img src="Images/Icons/pinterest.png" /><img src="Images/Icons/instagram.png" /></p>
-	</div>
-</div>
-<div class="sidebar">
-	<div class="sidebar-title">
-		<div class="sidebar-title-text">
-			Subcribe to stay up to date with new blogs
-		</div>
-		<div class="sidebar-title-body">
-			<p>
-				<input type="email" placeholder="Enter email here" />
-				<button type="button" class="btn btn-success btn-sm">Submit</button>
-			</p>
-		</div>
-	</div>
-</div>
-<div class="sidebar">
-	<div class="sidebar-title">
-		<div class="sidebar-title-text">
-			Cooking Tip
-		</div>
-		<div class="sidebar-title-body">
-			<p>When cooking oranges make sure to wash your hands multiple times</p>
-		</div>
-	</div>
-</div>
-<div class="sidebar">
-	<div class="sidebar-title">
-		<div class="sidebar-title-text">
-			Language
-		</div>
-		<div class="sidebar-title-body">
-			<div class="btn-group btn-group-justified" role="group" aria-label="...">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">English-US</button>
+	<div class="container-fluid background">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron">
+					<div class="container">
+				<h1>Haley Nguyen's Kitchen</h1>
+					</div>
 				</div>
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">Vietmanese</button>
+				<nav-component></nav-component>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10">
+				<div class="row">
+				
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12">
+						<sidebar-component></sidebar-component>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+  `,
+  directives: [NavigationComponent,SidebarComponent]
+})
+
+export class AppComponent {
+	Foods;
+}
+
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+	imports: [BrowserModule, FormsModule, HttpModule],
+	declarations: [AppComponent],
+	bootstrap: [AppComponent]
+})
+
+export class AppModule { }
