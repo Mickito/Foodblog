@@ -19,7 +19,7 @@ import {Component} from "@angular/core";
 							<li><a href="">Main Page</a></li>
 							<li><a href="">Food Blog</a></li>
 							<li><a href="">Lifestyle Blog</a></li>
-							<li><a href="">Food Gallery</a></li>
+							<li><a routerLink="/FoodGallery">Food Gallery</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recipies <span class="caret"></span></a>
 								<ul class="dropdown-menu">

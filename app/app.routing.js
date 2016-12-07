@@ -9,19 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-var FoodGalleryService = (function () {
-    function FoodGalleryService(_http) {
-        this._http = _http;
+var router_1 = require('@angular/router');
+var food_gallery_component_1 = require('./food-gallery.component');
+var routes = [
+    { path: 'FoodGallery', component: food_gallery_component_1.FoodGalleryComponent }
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    FoodGalleryService.prototype.getFoodData = function () {
-        return this._http.get("http://date.jsontest.com").map(function (Foods) { return Foods.json(); });
-    };
-    FoodGalleryService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], FoodGalleryService);
-    return FoodGalleryService;
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.FoodGalleryService = FoodGalleryService;
-//# sourceMappingURL=food-gallery.service.js.map
+exports.AppRoutingModule = AppRoutingModule;
+exports.routingComponents = [food_gallery_component_1.FoodGalleryComponent];
+//# sourceMappingURL=app.routing.js.map

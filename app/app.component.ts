@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationComponent } from './navigation.component';
 import { SidebarComponent } from './sidebar.component';
+import 'rxjs/Rx';
 
 @Component({
   selector: 'main-page',
@@ -21,7 +22,7 @@ import { SidebarComponent } from './sidebar.component';
 		<div class="row">
 			<div class="col-md-10">
 				<div class="row">
-				
+					<router-outlet></router-outlet>
 				</div>
 			</div>
 			<div class="col-md-2">
