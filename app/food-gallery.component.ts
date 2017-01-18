@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FoodGalleryService} from './food-gallery.service';
-import { food } from './food';
+import {food} from './food';
 
 @Component({
    selector: 'food-gallery-component',
@@ -10,7 +10,7 @@ import { food } from './food';
 
 export class FoodGalleryComponent {
 	foods: food[];
-	mode = 'Observable';
+
 	constructor(private httpService:FoodGalleryService){}
 
 	getData() {

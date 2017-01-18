@@ -14,7 +14,8 @@ var food_gallery_component_1 = require('./food-gallery.component');
 var default_component_1 = require('./default.component');
 var routes = [
     { path: 'FoodGallery', component: food_gallery_component_1.FoodGalleryComponent },
-    { path: 'Main', component: default_component_1.DefaultComponent }
+    { path: 'Main', component: default_component_1.DefaultComponent },
+    { path: 'Recipe', component: default_component_1.DefaultComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

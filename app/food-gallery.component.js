@@ -13,7 +13,6 @@ var food_gallery_service_1 = require('./food-gallery.service');
 var FoodGalleryComponent = (function () {
     function FoodGalleryComponent(httpService) {
         this.httpService = httpService;
-        this.mode = 'Observable';
     }
     FoodGalleryComponent.prototype.getData = function () {
         var _this = this;

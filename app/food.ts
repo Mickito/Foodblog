@@ -1,5 +1,5 @@
 export class food {
-	constructor(public Name: string, public Age: integer) { 
+	constructor(public Name: string, public Age: String) { 
 		
 	}
 }
