@@ -4,6 +4,10 @@
 	border-color: #673AB7;
 }
 
+.pad_lang {
+	padding-right: 15px;
+	padding-top: 5px;
+}
 .panel-purple {
   border-color: #7E57C2;
 }
