@@ -11,8 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var food_gallery_component_1 = require('./food-gallery.component');
+var default_component_1 = require('./default.component');
 var routes = [
-    { path: 'FoodGallery', component: food_gallery_component_1.FoodGalleryComponent }
+    { path: 'FoodGallery', component: food_gallery_component_1.FoodGalleryComponent },
+    { path: 'Main', component: default_component_1.DefaultComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -27,5 +29,5 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 exports.AppRoutingModule = AppRoutingModule;
-exports.routingComponents = [food_gallery_component_1.FoodGalleryComponent];
+exports.routingComponents = [food_gallery_component_1.FoodGalleryComponent, default_component_1.DefaultComponent];
 //# sourceMappingURL=app.routing.js.map

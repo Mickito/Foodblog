@@ -7,7 +7,7 @@ import {Component} from "@angular/core";
 	<div class="row">
 		<div class=col-md-3></div>
 		<div class="col-md-5">
-			<img src="Images/rsz_profile.jpg" alt="...">
+			<img src="Images/rsz_profile.jpg" alt="..." class="sidebar-image">
 		</div>
 		<div class=col-md-4></div>
 	</div>
@@ -26,7 +26,7 @@ import {Component} from "@angular/core";
 </div>
 <div class="sidebar">
 	<div class="sidebar-icons">
-		<p><img src="Images/Icons/facebook.png" /><img src="Images/Icons/twitter.png" /><img src="Images/Icons/linkedin.png" /><img src="Images/Icons/pinterest.png" /><img src="Images/Icons/instagram.png" /></p>
+		<p><img src="Images/Icons/facebook.png" class="icon"/><img src="Images/Icons/twitter.png" class="icon"/><img src="Images/Icons/linkedin.png" class="icon"/><img src="Images/Icons/pinterest.png" class="icon"/><img src="Images/Icons/instagram.png" class="icon"/></p>
 	</div>
 </div>
 <div class="sidebar">

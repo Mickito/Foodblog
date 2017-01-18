@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { FoodGalleryComponent } from './food-gallery.component';
-
+import { DefaultComponent } from './default.component'
 const routes: Routes = [
-	{path: 'FoodGallery', component: FoodGalleryComponent}
+	{path: 'FoodGallery', component: FoodGalleryComponent},
+	{path: 'Main', component: DefaultComponent}
 ];
 
 @NgModule({
@@ -14,4 +15,4 @@ const routes: Routes = [
 
 export class AppRoutingModule {}
  
-export const routingComponents = [FoodGalleryComponent];
+export const routingComponents = [FoodGalleryComponent,DefaultComponent];

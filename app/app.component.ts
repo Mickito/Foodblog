@@ -13,7 +13,8 @@ import 'rxjs/Rx';
 			<div class="col-md-12">
 				<div class="jumbotron">
 					<div class="container">
-				<h1>Haley Nguyen's Kitchen</h1>
+				<h1>A Hint of Sweet</h1>
+				<p>When the love of food is never enough</p>
 					</div>
 				</div>
 				<nav-component></nav-component>
@@ -21,9 +22,7 @@ import 'rxjs/Rx';
 		</div>
 		<div class="row">
 			<div class="col-md-10">
-				<div class="row">
-					<router-outlet></router-outlet>
-				</div>
+				<router-outlet></router-outlet>
 			</div>
 			<div class="col-md-2">
 				<div class="row">

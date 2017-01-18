@@ -1,3 +1,41 @@
+.purplebtn {
+	color: #fff;
+	background-color: #7E57C2;
+	border-color: #673AB7;
+}
+
+.panel-purple {
+  border-color: #7E57C2;
+}
+.panel-purple > .panel-heading {
+  color: #fff;
+  background-color: #7E57C2;
+  border-color: #7E57C2;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel {
+	width:100%; height:100%;
+	padding-bottom: 15px;
+}
+.carousel-inner > .item > img{
+	
+	width:100%; height:100%;
+	
+}
+.thumbnail {
+	border: 1px;
+	border-style: double;
+	border-color: #9575CD;
+}
 .background {
 	background-color: #EDE7F6;
 	background-size: cover;
@@ -9,6 +47,9 @@
 	color: white;
 }
 
+.caption {
+	text-align: center;
+}
 .navbar {
 	padding-bottom: 0px;
 	font-size: 20px;
@@ -39,9 +80,20 @@
 	text-align: center;
 }
 
-img {
-	padding-top: 15px;
-	padding-right: 5px;
+.media {
+	color: #9575CD;
+}
+
+.media-heading {
+	color: #311B92;
+}
+.icon {
+	padding-right: 7px;
+}
+
+.sidebar-image {
+	padding-top: 25px;
+	padding-right: 0px;
 }
 
 .sidebar-title {

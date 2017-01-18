@@ -15,7 +15,11 @@ var FoodGalleryService = (function () {
         this._http = _http;
     }
     FoodGalleryService.prototype.getFoodData = function () {
-        return this._http.get("http://date.jsontest.com").map(function (Foods) { return Foods.json(); });
+        return this._http.get("/data/Food-List.json").map(this.extractData);
+    };
+    FoodGalleryService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body.data || {};
     };
     FoodGalleryService = __decorate([
         core_1.Injectable(), 

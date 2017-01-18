@@ -1,6 +1,22 @@
-[
-	{"Name": "Chinese Wontons", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/Tiramisu.jpg"},
-	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "Html", "thumbnailUrl": "/Images/Food-Gallery/Tiramisu.jpg"},
-	{"Name": "Vietnamese Pho", "Information": "School Project", "Url": "Html", "thumbnailUrl": "/Images/Food-Gallery/Tiramisu.jpg"},
-	{"Name": "Deepfried Chicken and Chips", "Information": "School Project", "Url": "Html", "thumbnailUrl": "/Images/Food-Gallery/Tiramisu.jpg"}
-]
+{
+	"data": [
+	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/ChesseSticks.jpg"},
+	{"Name": "Chocolate Tiramisu", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/Tiramisu.jpg"},
+	{"Name": "Chocolate Chip Muffins", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/muffins.jpg"},
+	{"Name": "Melten Almond Cookies", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/almondcookies.jpg"},
+	{"Name": "Cream Cupcakes", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/creamcupcake.jpg"},
+	{"Name": "Fried Pork & Vegitables", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/FriedPorkVeg.jpg"},
+	{"Name": "Fried Chips & Meat", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/Friedchipsmeat.jpg"},
+	{"Name": "Chocolate Brownies", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/chocobrownies.jpg"},
+	{"Name": "Steamed Porkbuns", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/Porkbun.jpg"},
+	{"Name": "Chinese Wonton Soup", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/wontonsoup.jpg"},
+	{"Name": "Mooncake Piggies", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/MooncakePig.jpg"},
+	{"Name": "South Vietmanese Pho", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/pho.jpg"},
+	{"Name": "Heartshape Marshmallow", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/Marshmallow.jpg"},
+	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/ChesseSticks.jpg"},
+	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/ChesseSticks.jpg"},
+	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/ChesseSticks.jpg"},
+	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/ChesseSticks.jpg"},
+	{"Name": "Deepfried Chesse Sticks", "Information": "School Project", "Url": "", "thumbnailUrl": "/Images/Food-Gallery/ChesseSticks.jpg"}
+	]
+}

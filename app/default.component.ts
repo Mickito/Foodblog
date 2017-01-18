@@ -1,3 +1,8 @@
+import {Component} from "@angular/core";
+
+@Component({
+   	selector: 'default-component',
+	template: `
 <div class="row">
 	<div class="col-md-12">
 		<div class="panel panel-purple">
@@ -112,3 +117,9 @@
 		</div>
 	</div>
 </div>
+`
+})
+
+export class DefaultComponent {
+
+}

@@ -13,20 +13,19 @@ var food_gallery_service_1 = require('./food-gallery.service');
 var FoodGalleryComponent = (function () {
     function FoodGalleryComponent(httpService) {
         this.httpService = httpService;
+        this.mode = 'Observable';
     }
     FoodGalleryComponent.prototype.getData = function () {
         var _this = this;
-        return this.httpService.getFoodData().subscribe(function (f) { return _this.foodData = JSON.stringify(f); });
-        alert(this.foodData);
+        this.httpService.getFoodData().subscribe(function (foods) { return _this.foods = foods; });
     };
     FoodGalleryComponent.prototype.ngOnInit = function () {
-        this.foodData = this.getData();
-        alert(this.foodData);
+        this.getData();
     };
     FoodGalleryComponent = __decorate([
         core_1.Component({
             selector: 'food-gallery-component',
-            template: "<p>{{foodData}}</p>",
+            template: "\n<div class=\"col-sm-6 col-md-2\" *ngFor=\"let f of foods \">\n\t<div class=\"thumbnail\">\n\t\t\t<img src=\"{{f.thumbnailUrl}}\" alt=\"...\">\n\t\t<div class=\"caption\">\n\t\t\t<h4>{{f.Name}}</h4>\n\t\t\t\t<p></p>\n\t\t\t\t<p><a href=\"#\" class=\"btn btn-default\" role=\"button\">Infomation</a> <a href=\"#\" class=\"btn purplebtn\" role=\"button\">Recipe</a></p>\n\t\t</div>\n\t</div>\n</div>\n",
             providers: [food_gallery_service_1.FoodGalleryService]
         }), 
         __metadata('design:paramtypes', [food_gallery_service_1.FoodGalleryService])

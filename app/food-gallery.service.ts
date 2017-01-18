@@ -1,12 +1,21 @@
 import { Injectable  } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Response } from '@angular/http';
+
+import { food } from './food';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable ()
 
 export class FoodGalleryService{
 	constructor (private _http: Http) {}
 	
-	getFoodData () {
-		return this._http.get(`http://date.jsontest.com`).map(Foods => Foods.json());
+	getFoodData () : Observable<food[]>
+	{
+		return this._http.get(`/data/Food-List.json`).map(this.extractData);
 	}
+
+	private extractData(res: Response) {
+	let body = res.json();
+	return body.data || { };
+  }
 }

@@ -1,22 +1,35 @@
 import {Component} from '@angular/core';
 import {FoodGalleryService} from './food-gallery.service';
+import { food } from './food';
+
 @Component({
    selector: 'food-gallery-component',
-   template: `<p>{{foodData}}</p>`,
+   template: 
+`
+<div class="col-sm-6 col-md-2" *ngFor="let f of foods ">
+	<div class="thumbnail">
+			<img src="{{f.thumbnailUrl}}" alt="...">
+		<div class="caption">
+			<h4>{{f.Name}}</h4>
+				<p></p>
+				<p><a href="#" class="btn btn-default" role="button">Infomation</a> <a href="#" class="btn purplebtn" role="button">Recipe</a></p>
+		</div>
+	</div>
+</div>
+`,
    providers: [FoodGalleryService]
 })
 
 export class FoodGalleryComponent {
-	foodData:string;
+	foods: food[];
+	mode = 'Observable';
 	constructor(private httpService:FoodGalleryService){}
 
 	getData() {
-		return this.httpService.getFoodData().subscribe(f => this.foodData = JSON.stringify(f));
-		alert(this.foodData);
+		this.httpService.getFoodData().subscribe(foods => this.foods = foods);
 	}
 
 	ngOnInit(){
-		this.foodData = this.getData();
-		alert(this.foodData);
+		this.getData();
 	}
 }
