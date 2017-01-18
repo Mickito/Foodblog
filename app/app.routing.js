@@ -12,10 +12,11 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var food_gallery_component_1 = require('./food-gallery.component');
 var default_component_1 = require('./default.component');
+var recipe_component_1 = require('./recipe.component');
 var routes = [
     { path: 'FoodGallery', component: food_gallery_component_1.FoodGalleryComponent },
     { path: 'Main', component: default_component_1.DefaultComponent },
-    { path: 'Recipe', component: default_component_1.DefaultComponent }
+    { path: 'Recipe', component: recipe_component_1.RecipeComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -30,5 +31,5 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 exports.AppRoutingModule = AppRoutingModule;
-exports.routingComponents = [food_gallery_component_1.FoodGalleryComponent, default_component_1.DefaultComponent];
+exports.routingComponents = [food_gallery_component_1.FoodGalleryComponent, default_component_1.DefaultComponent, recipe_component_1.RecipeComponent];
 //# sourceMappingURL=app.routing.js.map

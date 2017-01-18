@@ -8,7 +8,7 @@ import { RecipeComponent } from './recipe.component'
 const routes: Routes = [
 	{path: 'FoodGallery', component: FoodGalleryComponent},
 	{path: 'Main', component: DefaultComponent},
-	{path: 'Recipe', component: DefaultComponent}
+	{path: 'Recipe', component: RecipeComponent}
 ];
 
 @NgModule({
@@ -18,4 +18,4 @@ const routes: Routes = [
 
 export class AppRoutingModule {}
  
-export const routingComponents = [FoodGalleryComponent,DefaultComponent];
+export const routingComponents = [FoodGalleryComponent,DefaultComponent,RecipeComponent];
