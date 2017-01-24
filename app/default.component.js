@@ -12,6 +12,11 @@ var core_1 = require("@angular/core");
 var DefaultComponent = (function () {
     function DefaultComponent() {
     }
+    DefaultComponent.prototype.ngAfterViewInit = function () {
+        $(document).ready(function () {
+            $("#FoodCarousel").carousel();
+        });
+    };
     DefaultComponent = __decorate([
         core_1.Component({
             selector: 'default-component',

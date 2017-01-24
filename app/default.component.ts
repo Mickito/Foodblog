@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+declare var $:JQueryStatic;
 
 @Component({
    	selector: 'default-component',
@@ -7,4 +8,9 @@ import {Component} from "@angular/core";
 
 export class DefaultComponent {
 
+	ngAfterViewInit() {
+		$(document).ready(function(){
+    	 	$("#FoodCarousel").carousel();
+		});
+	}
 }
